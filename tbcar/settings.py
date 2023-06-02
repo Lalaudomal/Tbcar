@@ -89,7 +89,7 @@ DATABASES = {
 """
 import environ
 env = environ.Env( )
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+environ.Env.read_env(os.path.join(BASE_DIR, '../.env'))
 
 import dj_database_url
 DATABASE_URL= os.environ.get('DATABASE_URL')
